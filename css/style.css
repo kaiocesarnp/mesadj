@@ -76,5 +76,25 @@ html, body{
     margin-left: -250px;
 }
 
+.mesa_dj .pe_mesa{
+    position: absolute;
+    background-color: var(--cor-pe-mesa);
+    border: 10px solid var(--cor-borda);
+    width: 300px;
+    height: 40px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    transform: skew(30deg);
+}
+
+.mesa_dj .pe_mesa.topo{
+    top: -50px;
+}
+
+.mesa_dj .pe_mesa.rodape{
+    bottom: -50px;
+}
+
 
 /*  */
