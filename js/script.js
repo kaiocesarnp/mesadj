@@ -1,5 +1,5 @@
 let elementosBotoes = document.querySelectorAll("button"); //seleciona todos os botões
-let elementoImagemRatinho = document.querySelector(".js-imagem-ratinho"); //seleciona a imagem
+let elementoImagemCapitao = document.querySelector(".js-imagem-capitao"); //seleciona a imagem
 
 elementosBotoes.forEach((botaoCorrente) => {
     botaoCorrente.addEventListener("click", ()=>{ //barulho do botão
@@ -14,10 +14,10 @@ document.
     });
 
     botaoCorrente.addEventListener("mouseenter", () => {
-        elementoImagemRatinho.classList.add("aparecer");
+        elementoImagemCapitao.classList.add("aparecer");
     });
     
     botaoCorrente.addEventListener("mouseleave", () => {
-        elementoImagemRatinho.classList.remove("aparecer");
+        elementoImagemCapitao.classList.remove("aparecer");
     });
 });
