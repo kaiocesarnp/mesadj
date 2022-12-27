@@ -63,7 +63,7 @@ body {
     transform: scale(1.03); /* aumentar o tamanho do elemento */
   }
 
-.mesa_dj .imagem_ratinho{
+.mesa_dj .imagem_capitao{
     position: absolute;
     z-index: -1;
     transform: rotate(-90deg); /* rotação */
@@ -71,7 +71,7 @@ body {
     transition: .3s all ease; 
 }
 
-.mesa_dj .imagem_ratinho.aparecer{
+.mesa_dj .imagem_capitao.aparecer{
     margin-left: -250px;
 }
 
