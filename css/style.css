@@ -1,13 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;800&display=swap");
 
 :root {
-  --cor-background: #bcbdc0;
+  --cor-background: #7c7c7c;
   --cor-branco: #fff;
   --cor-borda: #231f20;
-  --cor-fundo-mesa: #818285;
+  --cor-fundo-mesa: #755d5d;
   --cor-pe-mesa: #58585a;
-  --cor-botao-par: #f1592b;
-  --cor-botao-impar: #8dc63f;
+  --cor-botao-par: #c9c626;
+  --cor-botao-impar: #2c6821;
 }
 
 * {
@@ -61,6 +61,7 @@ body {
 .mesa_dj .corpo button:hover {
     opacity: 1;
     transform: scale(1.03); /* aumentar o tamanho do elemento */
+    font-weight: bold;
   }
 
 .mesa_dj .imagem_capitao{
