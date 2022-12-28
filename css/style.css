@@ -67,13 +67,13 @@ body {
 .mesa_dj .imagem_capitao{
     position: absolute;
     z-index: -1;
-    transform: rotate(-90deg); /* rotação */
+    transform: rotate(90deg); /* rotação */
     width: 280px;
     transition: .3s all ease; 
 }
 
 .mesa_dj .imagem_capitao.aparecer{
-    margin-left: -250px;
+    margin-left: 425px;
 }
 
 .mesa_dj .pe_mesa{
@@ -97,19 +97,18 @@ body {
 }
 
 
-
 /* RESPONSIVO */
 
 @media (max-width: 1104px){
   h1{
-    margin-left: -45%;
+    margin-left: -15%;
   }
   .mesa_dj{
-    max-width: 65%;
+    max-width: 360px;
   }
   .mesa_dj .corpo {
     max-width: 80px;
-    gap: 2px;
+    gap: 20px;
   }
   .mesa_dj button {
     max-width: 80px;
@@ -118,17 +117,15 @@ body {
   font: 0.6rem sans-serif;
 }
 .mesa_dj .imagem_capitao{
-    /* position: absolute; */
-    /* z-index: -1; */
-    transform: rotate(-90deg);
-    width: 100px;
+    /* transform: rotate(90deg); */
+    width: 150px;
     transition: .3s all ease; 
 }
 /* .mesa_dj .imagem_capitao.aparecer{
   margin-top: -140px;
 } */
 .mesa_dj .imagem_capitao.aparecer{
-  margin-left: -135px;
+  margin-left: 300px;
 }
 }
 
