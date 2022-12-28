@@ -119,7 +119,7 @@ body {
 }
 .mesa_dj .imagem_capitao{
     /* transform: rotate(90deg); */
-    width: 150px;
+    width: 70px;
     transition: .3s all ease; 
 }
 /* .mesa_dj .imagem_capitao.aparecer{
