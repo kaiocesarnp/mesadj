@@ -101,17 +101,18 @@ body {
 
 @media (max-width: 1104px){
   h1{
-    margin-left: -15%;
+    /* margin-left: -15%; */
+    justify-content: center;
   }
   .mesa_dj{
-    max-width: 360px;
+    max-width: 330px;
   }
   .mesa_dj .corpo {
-    max-width: 80px;
+    /* max-width: 80px; */
     gap: 20px;
   }
   .mesa_dj button {
-    max-width: 80px;
+    max-width: 70px;
 }
 .mesa_dj .corpo button p{
   font: 0.6rem sans-serif;
@@ -125,7 +126,7 @@ body {
   margin-top: -140px;
 } */
 .mesa_dj .imagem_capitao.aparecer{
-  margin-left: 300px;
+  margin-left: 270px;
 }
 }
 
