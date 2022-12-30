@@ -1,4 +1,4 @@
-Link do site: https://lnkd.in/dVaB3K4k
+Link do site: https://kaiocesarnp.github.io/mesadj/
 
 Mesa de som é um dispositivo musical eletrônico utilizada por um operador de som, para sincronizar e combinar várias fontes de som, somando-as em um único sinal de saída.
 
