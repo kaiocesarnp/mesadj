@@ -42,6 +42,7 @@ body {
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* elementos se repetem 3 vezes e ocupam uma fração (1fr) */
     gap: 20px; /* espaço entre elementos */
+    overflow: hidden; /* impede a rolagem */
   }
 
 .mesa_dj .corpo button {
