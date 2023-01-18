@@ -1,0 +1,96 @@
+@use 'variables'
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;800&display=swap")
+
+*
+    font-family: "Open Sans", sans-serif
+    color: variables.$color-texto
+    -moz-box-sizing: border-box
+    box-sizing: border-box
+    letter-spacing: 0px
+    -webkit-font-smoothing: antialiased
+    -moz-osx-font-smoothing: grayscale
+    scroll-behavior: smooth
+    margin: 0
+
+html,body
+    background-color: variables.$color-background
+    height: 100vh
+    display: grid
+    place-items: center
+
+.mesadj
+    background-color: variables.$color-fundo-mesa
+    border: 10px solid variables.$color-borda
+    padding: 2rem
+    width: 500px
+    position: relative
+
+    &_corpo
+        display: grid
+        grid-template-columns: repeat(3, 1fr)//elementos se repetem 3 vezes e ocupam uma fração (1fr)
+        gap: 20px //espaço entre elementos
+        overflow: hidden //impede a rolagem
+
+    &_corpo button
+        background-color: variables.$color-botao-impar
+        border: 10px solid variables.$color-borda
+        width: 120px
+        height: 120px
+        cursor: pointer
+        opacity: 0.8
+        transition: 0.3s all ease // .3s = segundos para transição, all = pega qualquer coisa q modificar dentro do botão, ease = formato da transição 
+
+    &_corpo button:nth-child(even) //even = par, odd = impar
+        background-color: variables.$color-botao-par
+
+    &_corpo button:hover
+        opacity: 1
+        transform: scale(1.03) //aumentar o tamanho do elemento 
+        font-weight: bold
+
+.mesadj .imagem_capitao
+    position: absolute
+    z-index: -1
+    transform: rotate(90deg) //rotação
+    width: 280px
+    transition: .3s all ease
+
+.mesadj .imagem_capitao.aparecer
+    margin-left: 425px
+
+.mesadj .pe_mesa
+    position: absolute
+    background-color: variables.$color-pe-mesa
+    border: 10px solid variables.$color-borda
+    width: 300px
+    height: 40px
+    left: 0
+    right: 0
+    margin: auto
+    transform: skew(30deg)
+
+.mesadj .pe_mesa.topo
+    top: -50px
+
+.mesadj .pe_mesa.rodape
+    bottom: -50px
+
+@media (max-width: 1104px)
+    h1
+        /*margin-left: -15%;*/
+        justify-content: center
+    .mesadj
+        max-width: 330px
+    .mesadj .corpo
+        /* max-width: 80px; */
+        gap: 20px
+    .mesadj button
+        max-width: 70px
+    .mesadj .corpo button p
+        font: 0.6rem sans-serif
+    .mesadj .imagem_capitao
+        /* transform: rotate(90deg); */
+        width: 70px
+        transition: .3s all ease
+    .mesadj .imagem_capitao.aparecer
+        margin-left: 270px

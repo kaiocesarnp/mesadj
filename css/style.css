@@ -1,18 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;800&display=swap");
-
-:root {
-  --cor-background: #7c7c7c;
-  --cor-branco: #fff;
-  --cor-borda: #231f20;
-  --cor-fundo-mesa: #755d5d;
-  --cor-pe-mesa: #58585a;
-  --cor-botao-par: #c9c626;
-  --cor-botao-impar: #2c6821;
-}
-
 * {
   font-family: "Open Sans", sans-serif;
-  color: var(--cor-texto);
+  color: #000000;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   letter-spacing: 0px;
@@ -22,111 +11,102 @@
   margin: 0;
 }
 
-html,
-body {
-  background-color: var(--cor-background);
+html, body {
+  background-color: #7c7c7c;
   height: 100vh;
   display: grid;
   place-items: center;
 }
 
-.mesa_dj {
-    background-color: var(--cor-fundo-mesa);
-    border: 10px solid var(--cor-borda);
-    padding: 2rem;
-    width: 500px;
-    position: relative;
-  }
-
-.mesa_dj .corpo {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* elementos se repetem 3 vezes e ocupam uma fração (1fr) */
-    gap: 20px; /* espaço entre elementos */
-    overflow: hidden; /* impede a rolagem */
-  }
-
-.mesa_dj .corpo button {
-    background-color: var(--cor-botao-impar);
-    border: 10px solid var(--cor-borda);
-    width: 120px;
-    height: 120px;
-    cursor: pointer;
-    opacity: 0.8;
-    transition: 0.3s all ease; /* .3s = segundos para transição, all = pega qualquer coisa q modificar dentro do botão, ease = formato da transição */ 
+.mesadj {
+  background-color: #755d5d;
+  border: 10px solid #231f20;
+  padding: 2rem;
+  width: 500px;
+  position: relative;
+}
+.mesadj_corpo {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  overflow: hidden;
+}
+.mesadj_corpo button {
+  background-color: #2c6821;
+  border: 10px solid #231f20;
+  width: 120px;
+  height: 120px;
+  cursor: pointer;
+  opacity: 0.8;
+  transition: 0.3s all ease;
+}
+.mesadj_corpo button:nth-child(even) {
+  background-color: #c9c626;
+}
+.mesadj_corpo button:hover {
+  opacity: 1;
+  transform: scale(1.03);
+  font-weight: bold;
 }
 
-.mesa_dj .corpo button:nth-child(even) { /* even = par, odd = impar */
-    background-color: var(--cor-botao-par);
+.mesadj .imagem_capitao {
+  position: absolute;
+  z-index: -1;
+  transform: rotate(90deg);
+  width: 280px;
+  transition: 0.3s all ease;
 }
 
-.mesa_dj .corpo button:hover {
-    opacity: 1;
-    transform: scale(1.03); /* aumentar o tamanho do elemento */
-    font-weight: bold;
-  }
-
-.mesa_dj .imagem_capitao{
-    position: absolute;
-    z-index: -1;
-    transform: rotate(90deg); /* rotação */
-    width: 280px;
-    transition: .3s all ease; 
+.mesadj .imagem_capitao.aparecer {
+  margin-left: 425px;
 }
 
-.mesa_dj .imagem_capitao.aparecer{
-    margin-left: 425px;
+.mesadj .pe_mesa {
+  position: absolute;
+  background-color: #58585a;
+  border: 10px solid #231f20;
+  width: 300px;
+  height: 40px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  transform: skew(30deg);
 }
 
-.mesa_dj .pe_mesa{
-    position: absolute;
-    background-color: var(--cor-pe-mesa);
-    border: 10px solid var(--cor-borda);
-    width: 300px;
-    height: 40px;
-    left: 0;
-    right: 0;
-    margin: auto;
-    transform: skew(30deg);
+.mesadj .pe_mesa.topo {
+  top: -50px;
 }
 
-.mesa_dj .pe_mesa.topo{
-    top: -50px;
+.mesadj .pe_mesa.rodape {
+  bottom: -50px;
 }
 
-.mesa_dj .pe_mesa.rodape{
-    bottom: -50px;
-}
-
-
-/* RESPONSIVO */
-
-@media (max-width: 1104px){
-  h1{
-    /* margin-left: -15%; */
+@media (max-width: 1104px) {
+  h1 {
+    /*margin-left: -15%;*/
     justify-content: center;
   }
-  .mesa_dj{
+  .mesadj {
     max-width: 330px;
   }
-  .mesa_dj .corpo {
+  .mesadj .corpo {
     /* max-width: 80px; */
     gap: 20px;
   }
-  .mesa_dj button {
+  .mesadj button {
     max-width: 70px;
-}
-.mesa_dj .corpo button p{
-  font: 0.6rem sans-serif;
-}
-.mesa_dj .imagem_capitao{
+  }
+  .mesadj .corpo button p {
+    font: 0.6rem sans-serif;
+  }
+  .mesadj .imagem_capitao {
     /* transform: rotate(90deg); */
     width: 70px;
-    transition: .3s all ease; 
+    transition: 0.3s all ease;
+  }
+  .mesadj .imagem_capitao.aparecer {
+    margin-left: 270px;
+  }
 }
-/* .mesa_dj .imagem_capitao.aparecer{
-  margin-top: -140px;
-} */
-.mesa_dj .imagem_capitao.aparecer{
-  margin-left: 270px;
-}
-}
+
+/*# sourceMappingURL=style.css.map */
